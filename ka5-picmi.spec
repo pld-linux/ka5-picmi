@@ -42,6 +42,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A nonogram logic game for KDE.
 
+%description -l pl.UTF-8
+Gra logiczna dla KDE.
+
 %prep
 %setup -q -n %{kaname}-%{version}
 
