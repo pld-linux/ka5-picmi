@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	22.08.3
+%define		kdeappsver	22.12.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		picmi
 Summary:	Picmi
 Name:		ka5-%{kaname}
-Version:	22.08.3
+Version:	22.12.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	130fca85d4abd10e75345b4ec4ffcf05
+# Source0-md5:	b09e3c22e86f09ae20e87d331469d026
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel >= 5.11.1
@@ -87,7 +87,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/32x32/apps/picmi.png
 %{_iconsdir}/hicolor/48x48/apps/picmi.png
 %{_iconsdir}/hicolor/64x64/apps/picmi.png
-%{_datadir}/kxmlgui5/picmi
 %{_datadir}/metainfo/org.kde.picmi.appdata.xml
 %{_datadir}/picmi
 %{_datadir}/qlogging-categories5/picmi.categories
